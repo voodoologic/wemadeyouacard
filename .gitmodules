@@ -1,0 +1,3 @@
+[submodule "vendor/assets/circleplayer"]
+	path = vendor/assets/circleplayer
+	url = git://github.com/maboa/circleplayer.git
