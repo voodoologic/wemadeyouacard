@@ -1,5 +1,5 @@
 class Message < ActiveRecord::Base
-  attr_accessible :audio, :image
+  # attr_accessible :audio, :image
   belongs_to :card
 
   # mount_uploader :audio, AudioUploader
