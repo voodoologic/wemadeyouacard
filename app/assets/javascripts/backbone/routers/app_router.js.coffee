@@ -3,6 +3,7 @@ jQuery ->
     routes: 
       ''                             : "indexCards"
       '/cards'                       : "indexCards"
+      '/cards/new'                   : "newCard"
       '/cards/:id'                   : "showCard"
       '/cards/:card_id/messages'     : "indexMessages"
       '/cards/:card_id/messages/:id' : "showMessage"
@@ -16,6 +17,10 @@ jQuery ->
       cards      = new Cards
       cards_view = new CardsView( {collection: cards } )
       cards.fetch()
+
+    newCard: ->
+      cards     = new Cards
+      card_view = new createCardView
 
     showMessage: ->
       message = new Message {id: @id}

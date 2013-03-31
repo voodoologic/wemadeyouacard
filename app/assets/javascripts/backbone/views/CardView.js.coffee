@@ -25,8 +25,20 @@ jQuery ->
 
     render: ->
       $('#container').replaceWith( @$el.html(@template) )
-      console.log "template: ", @template()
       @collection.each (card) ->
         view = new CardView model: card
         view.render()
       @
+
+  class window.createCardView extends Backbone.View
+
+    template: JST['backbone/templates/cards/newCard']
+
+    initialize: ->
+      _.bindAll(@, 'render')
+      alert("whoot")
+
+    urlRoot: '/cards/new'
+
+    render: ->
+      $('#container').replaceWith( @$el.html(@template) )

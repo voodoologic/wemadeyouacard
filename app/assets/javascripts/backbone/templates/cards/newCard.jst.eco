@@ -1,7 +1,7 @@
 <div class="ui-page ui-body-a ui-page-active" data-role="page" data-theme="a" tapindex="0">
   <div data-position="inline">
     <div class="ui-header ui-bar-a" data-role="header" data-theme="a">
-      <h2 class="ui-title" aria-level="1"> We Made you a card </h2>
+      <h2 class="ui-title" aria-level="1"> Create Your Own Card </h2>
     </div>
   </div>
 
