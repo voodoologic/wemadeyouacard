@@ -1,6 +1,6 @@
 <div data-role="page" data-theme="a">
   <div data-role="header" data-position="inline">
-    <h1 class="ui-title"> We Made you a card </h1>
+    <h1 class="ui-header"> We Made you a card </h1>
   </div>
 </div>
 
