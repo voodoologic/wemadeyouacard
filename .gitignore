@@ -1,4 +1,5 @@
 public/uploads
+config/application.yml
 **.swp
 **.swo
 *.rbc
