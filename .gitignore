@@ -1,5 +1,6 @@
 public/uploads
 **.swp
+**.swo
 *.rbc
 *.sassc
 .sass-cache
