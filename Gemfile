@@ -13,6 +13,7 @@ group :assets do
   gem 'coffee-rails', '~> 4.0.0.beta1'
   gem 'eco'
   gem 'haml-rails'
+  gem 'unicorn'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', platforms: :ruby
