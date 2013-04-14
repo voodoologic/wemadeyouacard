@@ -40,7 +40,7 @@ class CardsController < ApplicationController
   # POST /cards
   # POST /cards.json
   def create
-    @card = Card.new(params[:card])
+    @card = Card.new(:title => params[:card].fetch("title"))
 
     respond_to do |format|
       if @card.save

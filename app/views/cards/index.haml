@@ -4,6 +4,15 @@
       %h2.ui-title{"aria-level" => "1"} We Made you a card
   .ui-content{"data-role" => "content", :role => "main"}
     %ul.ui-listview{"data-divider-theme" => "a", "data-inset" => "false", "data-role" => "listview"}
+      - for card in @cards do 
+        %li.ui-li.ui-btn.ui-btn-icon-right.ui-li-has-arrow.ui-btn-up-a{"data-corners" => "false", "data-icon" => "arrow-r", "data-iconpos" => "right", "data-iconshadow" => "true", "data-shadow" => "false", "data-theme" => "a", "data-wrapperels" => "div"}
+          .ui-btn-inner
+            .ui-btn-text
+              %a.ui-link-inherit{"data-transition" => "slide", :href => "/cards/#{card.id}/messages"}
+                - if card.title.present?
+                  = card.title
+                - else
+                  no name card
       %li.ui-li.ui-btn.ui-btn-icon-right.ui-li-has-arrow.ui-btn-up-a{"data-corners" => "false", "data-icon" => "arrow-r", "data-iconpos" => "right", "data-iconshadow" => "true", "data-shadow" => "false", "data-theme" => "a", "data-wrapperels" => "div"}
         .ui-btn-inner
           .ui-btn-text

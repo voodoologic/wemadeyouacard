@@ -6,6 +6,12 @@ gem 'rails', '4.0.0.beta1'
 
 gem 'pg'
 
+gem 'fog'
+gem 'carrierwave'
+gem 'carrierwave_direct'
+gem 'sidekiq'
+gem 'rmagick'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

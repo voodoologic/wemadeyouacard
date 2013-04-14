@@ -18,8 +18,8 @@
 // require backbone_rails_sync
 // require backbone_datalink
 // require backbone/wemadeyouacard
-//= require ../../../vendor/assets/circleplayer/js/jquery.jplayer
-//= require ../../../vendor/assets/circleplayer/js/jquery.grab
-//= require ../../../vendor/assets/circleplayer/js/jquery.transform2d
-//= require ../../../vendor/assets/circleplayer/js/circle.player
+// require vendor/assets/circleplayer/js/jquery.jplayer
+// require vendor/assets/circleplayer/js/jquery.grab
+// require vendor/assets/circleplayer/js/jquery.transform2d
+// require vendor/assets/circleplayer/js/circle.player
 //= require_tree .

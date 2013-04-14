@@ -2,7 +2,8 @@ class MessagesController < ApplicationController
   # GET /messages
   # GET /messages.json
   def index
-    @messages = Card.find(params[:card_id]).messages
+    @card = Card.find params[:card_id]
+    @messages = @card.messages
 
     respond_to do |format|
       format.html # index.html.erb
@@ -42,7 +43,7 @@ class MessagesController < ApplicationController
   # POST /messages.json
   def create
     @card    = Card.find params[:card_id]
-    @message = Message.new(params[:message])
+    @message = Message.new(:image => params[:message][:image], :audio => params[:message][:audio])
     @message.card = @card
 
     respond_to do |format|
